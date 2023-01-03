@@ -1,7 +1,7 @@
 <div class="bg-white">
   <div class="w-[80%] mx-auto">
     <p class="text-[#ed3b3b] font-semibold text-[1.2rem]">
-      Price From 3000Inr per Night
+      Price From 3000 Inr per Night
     </p>
     <p class="text-[2.5rem] text-[#212643] font-semibold">
       <%= room.roomType%>
@@ -21,7 +21,7 @@
     </p>
     <section class="pb-12 mt-12">
       <p class="pb-4 text-3xl font-semibold text-[#212643]">Amenties</p>
-      <div class="grid grid-cols-3">
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
         <p class="py-1">Air conditioner</p>
         <p class="py-1">Ironing Board</p>
         <p class="py-1">Hair Dryer</p>
@@ -38,18 +38,18 @@
     </section>
     <section class="pb-12">
       <p class="pb-4 text-3xl font-semibold text-[#212643]">House Rules</p>
-      <div class="grid grid-cols-2">
+      <div class="sm:grid sm:grid-cols-2">
         <div>
-          <p>Check In</p>
-          <div class="flex flex-col">
+          <p class="text-[#f14848] font-semibold">Check In</p>
+          <div class="flex flex-col space-y-2">
             <p>Check-in from 9:00 AM – anytime</p>
             <p>Early check-in subject to availability</p>
             <p>Minimum check-in age – 18</p>
           </div>
         </div>
-        <div>
-          <p>Check Out</p>
-          <div class="flex flex-col">
+        <div class="mt-4 sm:mt-0">
+          <p class="text-[#f14848] font-semibold">Check Out</p>
+          <div class="flex flex-col space-y-2">
             <p>Check-out before noon</p>
             <p>Express check-out</p>
           </div>

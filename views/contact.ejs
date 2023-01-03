@@ -1,15 +1,15 @@
 <div
-  class="h-[500px] bg-cover bg-center relative"
+  class="h-[300px] sm:h-[500px] bg-cover bg-center relative"
   style="background-image: url('images/contact_back.jpg')"
 >
   <h1
-    class="text-white text-[5rem] font-semibold absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
+    class="text-white text-[2rem] sm:text-[5rem] font-semibold absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
   >
     Contact Us
   </h1>
 </div>
 <div
-  class="-translate-y-[70px] px-[100px] py-[80px] relative w-[90%] flex bg-white text-[#535353] mx-auto rounded-[10px]"
+  class="-translate-y-[70px] sm:px-[100px] px-[30px] sm:py-[80px] py-[40px] relative w-[90%] sm:flex bg-white text-[#535353] mx-auto rounded-[10px]"
 >
   <div class="flex-1">
     <p class="decortive_heading">GET IN TOUCH</p>
@@ -22,13 +22,29 @@
       we share.
     </p>
     <form class="">
-      <div class="grid grid-cols-2 gap-8 py-8">
-        <input class="contact_input" type="text" placeholder="Your Name" />
-        <input class="contact_input" type="text" placeholder="Your Email" />
-        <input class="contact_input" type="text" placeholder="Phone Number" />
-        <input class="contact_input" type="text" placeholder="Subject" />
+      <div class="sm:grid sm:grid-cols-2 sm:gap-8 py-8">
+        <input
+          class="contact_input w-full mb-4 sm:mb-0"
+          type="text"
+          placeholder="Your Name"
+        />
+        <input
+          class="contact_input w-full mb-4 sm:mb-0"
+          type="text"
+          placeholder="Your Email"
+        />
+        <input
+          class="contact_input w-full mb-4 sm:mb-0"
+          type="text"
+          placeholder="Phone Number"
+        />
+        <input
+          class="contact_input w-full mb-4 sm:mb-0"
+          type="text"
+          placeholder="Subject"
+        />
         <textarea
-          class="contact_input col-span-2 min-h-[200px] max-h-[200px]"
+          class="contact_input w-full pb-4 sm:pb-0 sm:col-span-2 min-h-[200px] max-h-[200px]"
           placeholder="Write a Message"
         ></textarea>
       </div>
@@ -40,10 +56,12 @@
       </button>
     </form>
   </div>
-  <div class="px-[50px] mt-[100px]">
+  <div class="px-[9px] sm:px-[50px] sm:mt-[100px] mt-[40px]">
     <div>
-      <p class="text-[2rem] text-[#1e1938] font-semibold">Panorama Resort</p>
-      <div class="pl-4">
+      <p class="text-[1.5rem] sm:text-[2rem] text-[#1e1938] font-semibold">
+        Panorama Resort
+      </p>
+      <div class="sm:pl-4">
         <p>
           2624 Sampson Street,<br />
           Aurora, CO 80014
@@ -52,10 +70,10 @@
       </div>
     </div>
     <div class="mt-[30px]">
-      <p class="text-[2rem] text-[#1e1938] font-semibold">
+      <p class="text-[1.5rem] sm:text-[2rem] text-[#1e1938] font-semibold">
         Reception Phone No.
       </p>
-      <div class="pl-4">
+      <div class="sm:pl-4">
         <p>1800-456-7890</p>
         <p>Check In : 01:00 PM</p>
         <p>Check Out : 10:00 PM</p>
