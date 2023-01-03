@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.email_newsletter_input {
+  border-width: 0;
+  outline: none;
+  flex-grow: 1;
+  background-color: transparent;
+  padding: 10px 22px;
+  width: 100%;
+}
+.room_card {
+  border-radius: 10px;
+  height: 200px;
+}
+.image {
+  transition: all 0.2s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+.form_control {
+  padding: 10px 22px;
+  border: 2px solid #cacaca;
+}

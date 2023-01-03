@@ -1,0 +1,156 @@
+<section>
+  <div
+    class="h-[600px] bg-cover bg-center relative"
+    style="
+      background-image: url(images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg);
+    "
+  >
+    <p
+      class="absolute bottom-[120px] left-[150px] text-[5rem] leading-[60px] text-[#ffffff] font-bold"
+    >
+      The Panorama <br /><span class="text-[#f9f9f9] font-semibold text-[3rem]"
+        >Country Club & Resort</span
+      >
+    </p>
+  </div>
+</section>
+<section class="relative">
+  <form
+    class="bg-white -translate-y-[50px] flex justify-between items-center w-[75%] rounded-md mx-auto px-[50px] py-[30px]"
+  >
+    <div>
+      <p class="pb-3 font-semibold text-[0.9rem]">ARRIVAL DATE</p>
+      <input class="form_control" type="date" placeholder="Arrival Date" />
+    </div>
+    <div>
+      <p class="pb-3 font-semibold text-[0.9rem]">DEPARTURE DATE</p>
+      <input class="form_control" type="date" placeholder="Arrival Date" />
+    </div>
+    <div>
+      <p class="pb-3 font-semibold text-[0.9rem]">ADULTS</p>
+      <select class="form_control">
+        <option>No. of Adults</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <div>
+      <p class="pb-3 font-semibold text-[0.9rem]">CHILDRENS</p>
+      <select class="form_control">
+        <option>No. of Children</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <button
+      type="submit"
+      class="font-semibold text-[0.8rem] rounded-md mt-8 px-[22px] py-[10px] bg-[#e63232] text-white"
+    >
+      CHECK AVAILABLITY
+    </button>
+  </form>
+</section>
+<section class="text-white mx-[150px] pt-[50px]">
+  <div class="flex justify-between">
+    <div>
+      <p>ACCOMODATION</p>
+      <p class="text-[2.2rem] font-semibold">Rooms/Suit</p>
+    </div>
+    <div>
+      <p>
+        Our hotel offers 30 double, and 5 single rooms <br />
+        as well as 36 suites and junior suites.
+      </p>
+      <a href="/rooms" class="underline text-[#f03737]">View All Rooms</a>
+    </div>
+  </div>
+  <div class="grid grid-cols-3 gap-6 py-6">
+    <%- include('components/roomCardHome')%> <%-
+    include('components/roomCardHome')%> <%-
+    include('components/roomCardHome')%> <%-
+    include('components/roomCardHome')%>
+    <div class="col-span-2"><%- include('components/roomCardHome')%></div>
+  </div>
+</section>
+<section class="bg-white w-full sm:w-[80%] mx-auto p-12 rounded-md">
+  <p class="text-[1.3rem] font-semibold pb-4 text-[#b9b9b9]">RESTUARANT</p>
+  <div class="grid sm:grid-cols-2 grid-cols-1">
+    <div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="background-image: url('images/emy-XoByiBymX20-unsplash.jpg')"
+      ></div>
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="
+          background-image: url('images/alex-munsell-Yr4n8O_3UPc-unsplash.jpg');
+        "
+      ></div>
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="
+          background-image: url('images/brooke-lark-M4E7X3z80PQ-unsplash.jpg');
+        "
+      ></div>
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="
+          background-image: url('images/charlesdeluvio-D-vDQMTfAAU-unsplash.jpg');
+        "
+      ></div>
+    </div>
+    <div class="sm:pl-[40px] pl-[20px] pt-[20px] sm:pt-0">
+      <p class="text-[#e33939] text-[0.9rem] font-semibold">EAT & DRINK</p>
+      <p class="font-bold text-[2.2rem]">
+        Indulge in exceptional <br />
+        & Local Foodies
+      </p>
+      <p class="text-[#b9b9b9] py-6">Open Daily : 7.30 am - 11.00pm</p>
+      <button id="readmore" class="bg-[#f0f0f0] px-4 py-2">READ MORE</button>
+    </div>
+  </div>
+</section>
+<section class="bg-white w-full sm:w-[80%] mx-auto p-12 rounded-md mt-6">
+  <p class="text-[1.3rem] font-semibold pb-4 text-[#b9b9b9]">ENJOYMENT</p>
+  <div class="grid sm:grid-cols-2 grid-cols-1">
+    <div class="sm:pl-[40px] pl-[20px] pt-[20px] sm:pt-0">
+      <p class="font-bold text-[2.2rem]">
+        Enjoy refreshing experience <br />
+        in our Waterpark
+      </p>
+      <p class="text-[#b9b9b9] py-6">Open Daily : 7.30 am - 11.00pm</p>
+      <button id="readmore" class="bg-[#f0f0f0] px-4 py-2">READ MORE</button>
+    </div>
+    <div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="
+          background-image: url('images/yianni-mathioudakis-JK1TD9Sp5kY-unsplash.jpg');
+        "
+      ></div>
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="
+          background-image: url('images/vince-fleming--gwECgLmmU8-unsplash.jpg');
+        "
+      ></div>
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="
+          background-image: url('images/aquavera-KzUAW2htbiI-unsplash.jpg');
+        "
+      ></div>
+      <div
+        class="h-[150px] bg-cover rounded-md"
+        style="
+          background-image: url('images/jeremiah-lawrence-QBN_X4H0x9U-unsplash.jpg');
+        "
+      ></div>
+    </div>
+  </div>
+</section>

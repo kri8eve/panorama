@@ -1,0 +1,26 @@
+<div class="">
+  <div
+    class="bg-cover bg-center h-[300px] rounded-md"
+    style="background-image: url('images/<%= room.image%>')"
+  ></div>
+  <div class="pt-4">
+    <p class="text-3xl font-semibold"><%= room.roomType%></p>
+    <div class="flex items-center space-x-8 pt-4">
+      <%if(room.features.bed){%>
+      <p><%= room.features.bed %> Bed</p>
+      <%}%> <%if(room.features.bathroom){%>
+      <p><%= room.features.bathroom %> Bathroom</p>
+      <%}%> <%if(room.features.area){%>
+      <p><%= room.features.area %>m2 Area</p>
+      <%}%>
+    </div>
+  </div>
+  <div class="pt-6">
+    <a
+      href="/rooms/<%= room.slug%>"
+      class="px-4 py-2 text-white bg-[#e73030] rounded-sm"
+    >
+      See Detail
+    </a>
+  </div>
+</div>

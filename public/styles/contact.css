@@ -1,0 +1,22 @@
+.decortive_heading {
+  position: relative;
+  color: rgb(233, 80, 80);
+  font-weight: 500;
+  transform: translate(50px);
+}
+.decortive_heading::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  height: 1px;
+  width: 50px;
+  background-color: rgb(233, 80, 80);
+  transform: translateX(-100%);
+}
+.contact_input {
+  padding: 10px 22px;
+  border: 1px solid #d4d4d4;
+  font-size: 16px;
+  border-radius: 2px;
+}
