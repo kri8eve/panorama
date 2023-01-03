@@ -4,6 +4,7 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 const ejs = require("ejs");
+const hostname = "0.0.0.0";
 const port = process.env.PORT || 8000;
 app.use(expressLayouts);
 app.use(express.static(path.join(__dirname, "public")));
@@ -21,6 +22,6 @@ app.get("/contact", (req, res) => {
   });
 });
 app.use("/rooms", require("./src/router/rooms"));
-app.listen(port, () => {
+app.listen(port, hostname, () => {
   console.log(`Server is running at ${port}`);
 });
