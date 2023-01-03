@@ -1,17 +1,23 @@
-<div class="">
+<div class="pb-8 sm:pb-0">
   <div
     class="bg-cover bg-center h-[300px] rounded-md"
     style="background-image: url('images/<%= room.image%>')"
   ></div>
   <div class="pt-4">
     <p class="text-3xl font-semibold"><%= room.roomType%></p>
-    <div class="flex items-center space-x-8 pt-4">
+    <div class="flex items-center space-x-4 sm:space-x-8 pt-4">
       <%if(room.features.bed){%>
-      <p><%= room.features.bed %> Bed</p>
+      <p class="text-[0.8rem] sm:text-[1rem] text-center">
+        <%= room.features.bed %> Bed
+      </p>
       <%}%> <%if(room.features.bathroom){%>
-      <p><%= room.features.bathroom %> Bathroom</p>
+      <p class="text-[0.8rem] sm:text-[1rem] text-center">
+        <%= room.features.bathroom %> Bathroom
+      </p>
       <%}%> <%if(room.features.area){%>
-      <p><%= room.features.area %>m2 Area</p>
+      <p class="text-[0.8rem] sm:text-[1rem] text-center">
+        <%= room.features.area %>m2 Area
+      </p>
       <%}%>
     </div>
   </div>

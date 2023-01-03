@@ -1,15 +1,38 @@
 <div
-  class="bg-white text-[#4d4d4d] z-50 sticky top-0 left-0 w-screen flex items-center space-x-2 justify-between px-[100px] py-[22px]"
+  class="bg-white text-[#4d4d4d] z-50 sticky top-0 left-0 w-screen flex items-center space-x-2 justify-between px-[20px] sm:px-[100px] py-[22px]"
 >
   <a href="/">Panorama</a>
-  <div class="flex items-center space-x-6">
+
+  <div class="flex items-center space-x-6" id="navItems">
     <a href="/">Home</a>
     <a href="/rooms">Rooms</a>
     <a href="/">Events</a>
     <a href="/">Waterpark</a>
     <a href="/blog">Blogs</a>
   </div>
-  <a href="/contact" class="px-4 py-2 bg-[#e33232] text-white rounded-md">
-    Reservation
-  </a>
+  <div class="flex items-center space-x-4 px-4">
+    <a
+      href="/contact"
+      class="px-4 py-2 text-[10px] sm:text-[1rem] bg-[#e33232] text-white rounded-md"
+    >
+      Contact Us
+    </a>
+    <i
+      class="fa fa-bars"
+      style="cursor: pointer"
+      id="menuIcon"
+      aria-hidden="true"
+    ></i>
+  </div>
 </div>
+<script>
+  var menu = document.getElementById("menuIcon");
+  var items = document.getElementById("navItems");
+  if (window.innerWidth < 400) {
+    items.style.display = "none";
+    menu.style.display = "block";
+  } else {
+    items.style.display = "flex";
+    menu.style.display = "none";
+  }
+</script>

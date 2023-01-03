@@ -1,14 +1,15 @@
 <section>
   <div
-    class="h-[600px] bg-cover bg-center relative"
+    class="sm:h-[600px] h-[400px] bg-cover bg-center relative"
     style="
       background-image: url(images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg);
     "
   >
     <p
-      class="absolute bottom-[120px] left-[150px] text-[5rem] leading-[60px] text-[#ffffff] font-bold"
+      class="absolute sm:bottom-[120px] bottom-[60px] sm:left-[150px] left-[20px] sm:text-[5rem] text-[2.5rem] leading-[60px] text-[#ffffff] font-bold"
     >
-      The Panorama <br /><span class="text-[#f9f9f9] font-semibold text-[3rem]"
+      The Panorama <br /><span
+        class="text-[#f9f9f9] font-semibold sm:text-[3rem] text-[1.5rem]"
         >Country Club & Resort</span
       >
     </p>
@@ -16,17 +17,17 @@
 </section>
 <section class="relative">
   <form
-    class="bg-white -translate-y-[50px] flex justify-between items-center w-[75%] rounded-md mx-auto px-[50px] py-[30px]"
+    class="bg-white sm:-translate-y-[50px] -translate-y-[10px] flex sm:flex-row flex-col justify-between items-center sm:w-[75%] w-[90%] rounded-md mx-auto px-[50px] py-[30px]"
   >
-    <div>
+    <div class="pb-4 sm:pb-0">
       <p class="pb-3 font-semibold text-[0.9rem]">ARRIVAL DATE</p>
       <input class="form_control" type="date" placeholder="Arrival Date" />
     </div>
-    <div>
+    <div class="pb-4 sm:pb-0">
       <p class="pb-3 font-semibold text-[0.9rem]">DEPARTURE DATE</p>
       <input class="form_control" type="date" placeholder="Arrival Date" />
     </div>
-    <div>
+    <div class="pb-4 sm:pb-0">
       <p class="pb-3 font-semibold text-[0.9rem]">ADULTS</p>
       <select class="form_control">
         <option>No. of Adults</option>
@@ -36,7 +37,7 @@
         <option>4</option>
       </select>
     </div>
-    <div>
+    <div class="pb-4 sm:pb-0">
       <p class="pb-3 font-semibold text-[0.9rem]">CHILDRENS</p>
       <select class="form_control">
         <option>No. of Children</option>
@@ -55,11 +56,11 @@
     </button>
   </form>
 </section>
-<section class="text-white mx-[150px] pt-[50px]">
-  <div class="flex justify-between">
+<section class="text-white sm:mx-[150px] mx-[20px] pt-[50px]">
+  <div class="flex sm:flex-row flex-col justify-between">
     <div>
       <p>ACCOMODATION</p>
-      <p class="text-[2.2rem] font-semibold">Rooms/Suit</p>
+      <p class="text-[2.2rem] pb-4 sm:pb-0 font-semibold">Rooms/Suit</p>
     </div>
     <div>
       <p>
@@ -69,7 +70,7 @@
       <a href="/rooms" class="underline text-[#f03737]">View All Rooms</a>
     </div>
   </div>
-  <div class="grid grid-cols-3 gap-6 py-6">
+  <div class="sm:grid sm:grid-cols-3 sm:gap-6 py-6">
     <%- include('components/roomCardHome')%> <%-
     include('components/roomCardHome')%> <%-
     include('components/roomCardHome')%> <%-
@@ -118,7 +119,7 @@
 <section class="bg-white w-full sm:w-[80%] mx-auto p-12 rounded-md mt-6">
   <p class="text-[1.3rem] font-semibold pb-4 text-[#b9b9b9]">ENJOYMENT</p>
   <div class="grid sm:grid-cols-2 grid-cols-1">
-    <div class="sm:pl-[40px] pl-[20px] pt-[20px] sm:pt-0">
+    <div class="sm:pl-[40px] pl-[20px] pt-[20px] sm:pt-0 pb-6 sm:pb-0">
       <p class="font-bold text-[2.2rem]">
         Enjoy refreshing experience <br />
         in our Waterpark
