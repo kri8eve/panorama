@@ -3,7 +3,7 @@
 >
   <a href="/">Panorama</a>
 
-  <div class="flex items-center space-x-6" id="navItems">
+  <div class="items-center space-x-6 sm:flex hidden" id="navItems">
     <a href="/">Home</a>
     <a href="/rooms">Rooms</a>
     <a href="/">Events</a>
@@ -17,22 +17,13 @@
     >
       Contact Us
     </a>
-    <i
-      class="fa fa-bars"
-      style="cursor: pointer"
-      id="menuIcon"
-      aria-hidden="true"
-    ></i>
+    <div class="flex sm:hidden">
+      <i
+        class="fa fa-bars"
+        style="cursor: pointer"
+        id="menuIcon"
+        aria-hidden="true"
+      ></i>
+    </div>
   </div>
 </div>
-<script>
-  var menu = document.getElementById("menuIcon");
-  var items = document.getElementById("navItems");
-  if (window.innerWidth < 400) {
-    items.style.display = "none";
-    menu.style.display = "block";
-  } else {
-    items.style.display = "flex";
-    menu.style.display = "none";
-  }
-</script>
