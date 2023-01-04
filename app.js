@@ -13,6 +13,7 @@ app.use(cors());
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
+ 
   return res.render("index", { title: "Panorama", layout: "./layouts/main" });
 });
 app.get("/contact", (req, res) => {

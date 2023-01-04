@@ -1,20 +1,65 @@
-<section>
-  <div
-    class="sm:h-[600px] h-[400px] bg-cover bg-center relative"
-    style="
-      background-image: url(images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg);
-    "
-  >
-    <p
-      class="absolute sm:bottom-[120px] bottom-[60px] sm:left-[150px] left-[20px] sm:text-[5rem] text-[2.5rem] leading-[60px] text-[#ffffff] font-bold"
+<!-- BANNER -->
+<div
+  id="carouselExampleControls"
+  class="carousel slide relative"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <div
+      class="carousel-item active relative h-[560px] bg-center bg-cover float-left w-full"
+      style="
+        background-image: url(images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg);
+      "
     >
-      The Panorama <br /><span
-        class="text-[#f9f9f9] font-semibold sm:text-[3rem] text-[1.5rem]"
-        >Country Club & Resort</span
+      <p
+        class="absolute sm:bottom-[120px] bottom-[60px] sm:left-[150px] left-[20px] sm:text-[5rem] text-[2.5rem] leading-[60px] text-[#ffffff] font-bold"
       >
-    </p>
+        The Panorama <br /><span
+          class="text-[#f9f9f9] font-semibold sm:text-[3rem] text-[1.5rem]"
+          >Country Club & Resort</span
+        >
+      </p>
+    </div>
+    <div
+      class="carousel-item relative h-[560px] bg-center bg-cover float-left w-full"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1606402179428-a57976d71fa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+      "
+    ></div>
+    <div
+      class="carousel-item relative h-[560px] bg-center bg-cover float-left w-full"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+      "
+    ></div>
   </div>
-</section>
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselExampleControls"
+    data-bs-slide="prev"
+  >
+    <span
+      class="carousel-control-prev-icon inline-block bg-no-repeat"
+      aria-hidden="true"
+    ></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselExampleControls"
+    data-bs-slide="next"
+  >
+    <span
+      class="carousel-control-next-icon inline-block bg-no-repeat"
+      aria-hidden="true"
+    ></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--AVAILABILTY FORM & ABOUT US -->
 <section class="relative w-[80%] mx-auto rounded-md">
   <form
     class="bg-white shadow-lg sm:-translate-y-[50px] -translate-y-[10px] flex sm:flex-row flex-col justify-between sm:items-center sm:w-[90%] w-[80%] rounded-md mx-auto px-[20px] sm:px-[50px] py-[30px]"
@@ -95,6 +140,8 @@
     </section>
   </div>
 </section>
+
+<!-- SERVICES -->
 <section
   class="w-[80%] mx-auto my-[50px] mt-[70px] rounded-[20px] overflow-hidden"
 >
@@ -224,6 +271,8 @@
     </div>
   </div>
 </section>
+
+<!-- ROOMS -->
 <section class="text-white sm:mx-[150px] mx-[20px] pt-[50px]">
   <div class="flex sm:flex-row flex-col justify-between">
     <div>
@@ -246,6 +295,8 @@
     <div class="col-span-2"><%- include('components/roomCardHome')%></div>
   </div>
 </section>
+
+<!-- RESTUARANT -->
 <section class="bg-white w-full sm:w-[80%] mx-auto p-12 rounded-md">
   <p class="text-[1.3rem] font-semibold pb-4 text-[#b9b9b9]">RESTUARANT</p>
   <div class="grid sm:grid-cols-2 grid-cols-1">
@@ -284,6 +335,8 @@
     </div>
   </div>
 </section>
+
+<!-- WATERPARK -->
 <section class="bg-white w-full sm:w-[80%] mx-auto p-12 rounded-md mt-6">
   <p class="text-[1.3rem] font-semibold pb-4 text-[#b9b9b9]">ENJOYMENT</p>
   <div class="grid sm:grid-cols-2 grid-cols-1">
@@ -324,12 +377,103 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- TESTIMONIALS & ARTICLES-->
 <section class="w-full mx-auto bg-white mt-[30px]">
-  <p class="text-center text-[#20325e] font-bold text-[2.3rem] pt-[50px]">
+  <p
+    class="text-center text-[#20325e] font-bold text-[1.8rem] sm:text-[2.3rem] pt-[50px] px-4 sm:px-0"
+  >
     What Our Customers are saying !!
   </p>
-  <div class="sm:grid sm:grid-cols-3 sm:w-[80%] w-[90%] mx-auto py-[30px] text-[#656565]">
+
+  <!-- caraousal testimonial -->
+  <div class="sm:hidden mt-4">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide relative"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner relative w-full overflow-hidden">
+        <div class="carousel-item active relative float-left w-full py-4 px-6">
+          <p class="font-semibold text-[2rem] text-[#20325e] pb-4">
+            The Best Resort
+          </p>
+          <p class="text-[#b8b8b8]">
+            The team at Baroque is incredibly dedicated, knowledgeable, and
+            helpful. The finished product was beautiful every penny incredibly
+            dedicated, bleincredibly dedicated, knowledgeable.
+          </p>
+          <div class="flex items-center space-x-4 py-4">
+            <div
+              class="w-[40px] h-[40px] rounded-full bg-[#f6ac22] bg-cover bg-center"
+            ></div>
+            <p class="font-semibold">PARKED DEVED</p>
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full py-4 px-6">
+          <p class="font-semibold text-[2rem] text-[#20325e] pb-4">
+            Healthy Environment
+          </p>
+          <p class="text-[#b8b8b8]">
+            The team at Baroque is incredibly dedicated, knowledgeable, and
+            helpful. The finished product was beautiful every penny incredibly
+            dedicated, bleincredibly dedicated, knowledgeable.
+          </p>
+          <div class="flex items-center space-x-4 py-4">
+            <div
+              class="w-[40px] h-[40px] rounded-full bg-[#f6ac22] bg-cover bg-center"
+            ></div>
+            <p class="font-semibold">PARKED DEVED</p>
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full py-4 px-6">
+          <p class="font-semibold text-[2rem] text-[#20325e] pb-4">
+            Best Holiday Place
+          </p>
+          <p class="text-[#b8b8b8]">
+            I love the Resort and its environment . Baroque is incredibly
+            dedicated, knowledgeable, and helpful. The finished product was
+            beautiful every penny incredibly dedicated, bleincredibly dedicated,
+            knowledgeable.
+          </p>
+          <div class="flex items-center space-x-4 py-4">
+            <div
+              class="w-[40px] h-[40px] rounded-full bg-[#f6ac22] bg-cover bg-center"
+            ></div>
+            <p class="font-semibold">PARKED DEVED</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon inline-block bg-no-repeat"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon inline-block bg-no-repeat"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- testimonial -->
+  <div
+    class="hidden sm:grid sm:grid-cols-3 sm:w-[80%] w-[90%] mx-auto py-[30px] text-[#656565]"
+  >
     <div class="p-4">
       <p class="font-semibold text-[2rem] text-[#20325e] pb-4">
         The Best Resort
@@ -379,6 +523,7 @@
       </div>
     </div>
   </div>
+
   <div class="flex items-center justify-center pb-[30px]">
     <a
       href="/"
@@ -389,92 +534,251 @@
   <hr />
 
   <!-- News and Articles -->
-  <p class="text-[2.5rem] text-center text-[#21265b] font-bold py-12">
-    News & Articles
-  </p>
-  <div class="sm:grid sm:grid-cols-3 sm:w-[80%] w-[90%] mx-auto sm:pb-[230px] pb-[60px] gap-6">
-    <!-- 1st blog -->
-    <div class="relative sm:pb-0 pb-[200px]">
-      <div
-        class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
-        style="
-          background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
-        "
-      ></div>
-      <div
-        class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[10%] sm:translate-y-[70%]"
-      >
-        <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
-        <p class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]">
-          New Heaven for our customers inn ...
-        </p>
-        <a
-          href="/"
-          class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
-          >READ MORE</a
-        >
-        <div
-          class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
-        >
-          <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
-        </div>
-      </div>
-    </div>
+ 
+  <section>
+    <p class="text-[2.5rem] text-center text-[#21265b] font-bold py-6 sm:py-12">
+      News & Articles
+    </p>
 
-    <!-- 2nd blog -->
-    <div class="relative sm:pb-0 pb-[200px]">
-      <div
-        class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
-        style="
-          background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
-        "
-      ></div>
-      <div
-        class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[10%] sm:translate-y-[70%]"
-      >
-        <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
-        <p class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]">
-          New Heaven for our customers inn ...
-        </p>
-        <a
-          href="/"
-          class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
-          >READ MORE</a
-        >
-        <div
-          class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
-        >
-          <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
+    <!-- caraousal news article -->
+    <div
+    id="carouselDarkVariant"
+    class="carousel-dark slide relative sm:hidden"
+    data-bs-ride="carousel"
+  >
+    <div
+      class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+    >
+      <button
+        type="button"
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselDarkVariant"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active float-left w-full p-6">
+        <div class="relative sm:pb-0 pb-[250px]">
+          <div
+            class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
+            style="
+              background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
+            "
+          ></div>
+          <div
+            class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[20%] sm:translate-y-[70%]"
+          >
+            <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
+            <p
+              class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]"
+            >
+              New Heaven for our customers inn ...
+            </p>
+            <a
+              href="/"
+              class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
+              >READ MORE</a
+            >
+            <div
+              class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
+            >
+              <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item float-left w-full p-6">
+        <div class="relative sm:pb-0 pb-[250px]">
+          <div
+            class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
+            style="
+              background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
+            "
+          ></div>
+          <div
+            class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[20%] sm:translate-y-[70%]"
+          >
+            <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
+            <p
+              class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]"
+            >
+              New Heaven for our customers inn ...
+            </p>
+            <a
+              href="/"
+              class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
+              >READ MORE</a
+            >
+            <div
+              class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
+            >
+              <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item float-left w-full p-6">
+        <div class="relative sm:pb-0 pb-[250px]">
+          <div
+            class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
+            style="
+              background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
+            "
+          ></div>
+          <div
+            class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[20%] sm:translate-y-[70%]"
+          >
+            <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
+            <p
+              class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]"
+            >
+              New Heaven for our customers inn ...
+            </p>
+            <a
+              href="/"
+              class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
+              >READ MORE</a
+            >
+            <div
+              class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
+            >
+              <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- 3rd blog -->
-    <div class="relative sm:pb-0 pb-[200px]">
-      <div
-        class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
-        style="
-          background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
-        "
-      ></div>
-      <div
-        class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[10%] sm:translate-y-[70%]"
-      >
-        <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
-        <p class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]">
-          New Heaven for our customers inn ...
-        </p>
-        <a
-          href="/"
-          class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
-          >READ MORE</a
-        >
-        <div
-          class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
-        >
-          <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
-        </div>
-      </div>
-    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide="prev"
+    >
+      <span
+        class="carousel-control-prev-icon inline-block bg-no-repeat"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#carouselDarkVariant"
+      data-bs-slide="next"
+    >
+      <span
+        class="carousel-control-next-icon inline-block bg-no-repeat"
+        aria-hidden="true"
+      ></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+    <div
+      class="hidden sm:grid sm:grid-cols-3 sm:w-[80%] w-[90%] mx-auto sm:pb-[230px] pb-[60px] gap-6"
+    >
+      <!-- 1st blog -->
+      <div class="relative sm:pb-0 pb-[250px]">
+        <div
+          class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
+          style="
+            background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
+          "
+        ></div>
+        <div
+          class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[20%] sm:translate-y-[70%]"
+        >
+          <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
+          <p
+            class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]"
+          >
+            New Heaven for our customers inn ...
+          </p>
+          <a
+            href="/"
+            class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
+            >READ MORE</a
+          >
+          <div
+            class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
+          >
+            <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd blog -->
+      <div class="relative sm:pb-0 pb-[250px]">
+        <div
+          class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
+          style="
+            background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
+          "
+        ></div>
+        <div
+          class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[20%] sm:translate-y-[70%]"
+        >
+          <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
+          <p
+            class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]"
+          >
+            New Heaven for our customers inn ...
+          </p>
+          <a
+            href="/"
+            class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
+            >READ MORE</a
+          >
+          <div
+            class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
+          >
+            <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd blog -->
+      <div class="relative sm:pb-0 pb-[250px]">
+        <div
+          class="rounded-[15px] h-[200px] sm:h-[260px] bg-cover bg-center"
+          style="
+            background-image: url('images/fabio-fistarol-qai_Clhyq0s-unsplash.jpg');
+          "
+        ></div>
+        <div
+          class="bg-white shadow-xl rounded-lg absolute p-8 w-[85%] bottom-0 right-0 -translate-y-[20%] sm:translate-y-[70%]"
+        >
+          <p class="text-[#b0b0b0] pb-4">admin/0 Comments</p>
+          <p
+            class="sm:text-[2.2rem] text-[1.5rem] font-bold leading-[33px] pb-6 text-[#253571]"
+          >
+            New Heaven for our customers inn ...
+          </p>
+          <a
+            href="/"
+            class="text-[#e43737] text-[0.6rem] font-bold px-4 py-2 rounded-full bg-[#ebe9e3]"
+            >READ MORE</a
+          >
+          <div
+            class="absolute top-0 -translate-y-1/2 flex items-center justify-center right-[20px] w-[65px] h-[65px] bg-[#e73333] text-white rounded-full"
+          >
+            <p class="leading-[20px] text-[15px] font-bold">11<br />Dec</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>

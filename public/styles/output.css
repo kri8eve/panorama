@@ -577,6 +577,10 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.float-left {
+  float: left;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -630,6 +634,14 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -686,6 +698,22 @@ video {
 
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[560px\] {
+  height: 560px;
 }
 
 .max-h-\[200px\] {
@@ -944,6 +972,10 @@ video {
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1027,6 +1059,10 @@ video {
   background-position: center;
 }
 
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-12 {
   padding: 3rem;
 }
@@ -1037,6 +1073,14 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-\[30px\] {
@@ -1217,6 +1261,14 @@ video {
   padding-bottom: 60px;
 }
 
+.pb-\[220px\] {
+  padding-bottom: 220px;
+}
+
+.pb-\[250px\] {
+  padding-bottom: 250px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1298,6 +1350,10 @@ video {
 
 .text-\[10px\] {
   font-size: 10px;
+}
+
+.text-\[1\.9rem\] {
+  font-size: 1.9rem;
 }
 
 .font-semibold {
@@ -1519,6 +1575,24 @@ video {
   border: 2px solid #cacaca;
 }
 
+.hover\:no-underline:hover {
+  text-decoration-line: none;
+}
+
+.hover\:outline-none:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:no-underline:focus {
+  text-decoration-line: none;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 @media (min-width: 640px) {
   .sm\:bottom-\[120px\] {
     bottom: 120px;
@@ -1688,6 +1762,11 @@ video {
     padding-right: 80px;
   }
 
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -1751,5 +1830,9 @@ video {
 
   .sm\:text-\[2\.2rem\] {
     font-size: 2.2rem;
+  }
+
+  .sm\:text-\[2\.3rem\] {
+    font-size: 2.3rem;
   }
 }
