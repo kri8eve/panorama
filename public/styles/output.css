@@ -712,6 +712,10 @@ video {
   height: 460px;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
@@ -774,6 +778,10 @@ video {
 
 .w-\[95\%\] {
   width: 95%;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .flex-1 {
