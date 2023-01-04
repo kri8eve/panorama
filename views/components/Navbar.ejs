@@ -10,7 +10,7 @@
   >
     <a href="/">Panorama</a>
 
-    <div class="items-center space-x-6 sm:flex hidden" id="navItems">
+    <div class="items-center space-x-6 sm:flex hidden">
       <a href="/">Home</a>
       <a href="/rooms">Rooms</a>
       <a href="/">Events</a>
@@ -24,14 +24,36 @@
       >
         Contact Us
       </a>
-      <div class="flex sm:hidden">
+      <button class="flex sm:hidden">
         <i
           class="fa fa-bars"
           style="cursor: pointer"
           id="menuIcon"
           aria-hidden="true"
         ></i>
-      </div>
+      </button>
     </div>
   </div>
+  <div
+    style="display: none"
+    class="bg-white text-[#757575] py-2 absolute bottom-0 left-0 right-0 translate-y-[100%] flex-col rounded-b-md"
+    id="navItems"
+  >
+    <a href="/" class="text-center py-4">Home</a>
+    <a href="/rooms" class="text-center py-4">Rooms</a>
+    <a href="/" class="text-center py-4">Events</a>
+    <a href="/" class="text-center py-4">Waterpark</a>
+    <a href="/blog" class="text-center py-4">Blogs</a>
+  </div>
 </div>
+<script>
+  const menuBtn = document.getElementById("menuIcon");
+  const menu = document.getElementById("navItems");
+  menuBtn.onclick = () => {
+    if (menu.style.display == "flex") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "flex";
+    }
+  };
+</script>
